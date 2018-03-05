@@ -1,0 +1,9 @@
+{{ define "main" -}}
+{{ partial "banner.html" . }}
+<p>{{ printf "%#v" .IsHome }}</p>
+<p>{{ printf "%#v" .Hugo.Generator }}</p>
+<p>{{ printf "%#v" .Site.Params.author }}</p>
+<p>{{ printf "%#v" .Site.Params.description }}</p>
+<p>{{ printf "%#v" .Site.Menus }}</p>
+<p>{{ printf "%#v" $.Site.Params.social.linkedin }}</p>
+{{- end }}

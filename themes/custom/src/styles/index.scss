@@ -1,0 +1,203 @@
+@import "./bootstrap";
+@import "./utils";
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 0 auto;
+}
+
+.bg-theme-dark {
+  background-color: theme-color("dark"); 
+}
+.bg-theme-lightt {
+  background-color: theme-color("lightt"); 
+}
+.bg-theme-lighter {
+  background-color: theme-color("lighter"); 
+}
+
+.navbar-border {
+  position: relative;
+  &:after {
+    @include media-breakpoint-up(md) {
+      content:""; 
+      background: theme-color("accent-primary");
+      position: absolute; 
+      bottom: 0; 
+      right: 0; 
+      height: 2px; 
+      width: 70%;
+    }
+  }
+}
+
+.navbar-theme {
+  .navbar-brand {
+    font-size: $h1-font-size;
+    color: theme-color("dark");
+    font-family: $navbar-theme-brand-font-type;
+    background-color: $navbar-theme-brand-background-color;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-theme-color;
+      transition: $link-transition;
+      @include hover-focus {
+        color: $navbar-theme-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-theme-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      background-color: $navbar-theme-active-color;
+      color: theme-color("dark");
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-theme-color;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-theme-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-theme-color;
+    a {
+      color: $navbar-theme-active-color;
+
+      @include hover-focus {
+        color: $navbar-theme-active-color;
+      }
+    }
+  }
+}
+
+.thumbnail {
+  text-align: center;
+  position: relative;
+  width: $thumbnail-size;
+  height: $thumbnail-size;
+  @include media-breakpoint-up(xl) {
+    width: $thumbnail-size-xl;
+    height: $thumbnail-size-xl;
+  }
+  .thumbnail-img {
+    box-shadow: 0px 0px 30px 0px theme-color("dark");
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border:2px solid theme-color("accent-primary");
+    padding:4px; 
+    // background: map-get($colors, brand);
+  }
+}
+
+.header {
+  .header-p {
+    font-size: $font-size-base;
+    @include media-breakpoint-up(sm) {
+      font-size: $font-size-lg;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: $h3-font-size;
+    }
+  }
+  .header-h1 {
+    text-align: center;
+    border-bottom: 2px solid theme-color("accent-primary");
+    font-size: $h2-font-size;
+    @include media-breakpoint-up(sm) {
+      font-size: $h1-font-size;
+    }
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: $display4-size;
+    }
+  }
+}
+
+
+.indexsection {
+  .indexsection-h1 {
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+      font-size: $display4-size;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: $display3-size;
+    }
+  }
+  .indexsection-entry {
+    border-bottom: 1px solid $border-color;
+    margin-top: $spacer * 1.5;
+    padding-bottom: $spacer * 1.5;
+    &:hover {
+      text-decoration: none;
+      .indexsection-entry-title {
+        text-decoration: underline;
+      }
+    }
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+  .indexsection-entry-title {
+    font-size: $h4-font-size;
+    @include media-breakpoint-up(lg) {
+      font-size: $h3-font-size;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: $h2-font-size;
+    }
+  }
+  .indexsection-entry-meta {
+    color: $gray-500;
+  }
+}
+.indexsection-border {
+  position: relative;
+  &:after {
+    content:""; 
+    background: theme-color("accent-primary");
+    position: absolute; 
+    bottom: 0; 
+    height: 6px; 
+    width: 10%;
+    left: calc(90% / 2);
+    @include media-breakpoint-up(lg) {
+      left: 0; 
+      width: 30%;
+      text-align: left;
+      font-size: $display4-size;
+    }
+  }
+}
+
+.footer {
+  color: $text-muted;
+}

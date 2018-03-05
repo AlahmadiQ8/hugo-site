@@ -1,0 +1,9 @@
+{{ define "main" -}}
+
+{{ range . }}
+  <p>{{ printf "%#v" . }}</p>
+{{- end }}
+<!-- {{ printf "%#v" .Permalink }} -->
+<!-- {{ printf "%#v" . }} -->
+
+{{- end }}

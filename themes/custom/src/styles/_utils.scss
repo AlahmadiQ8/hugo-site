@@ -1,0 +1,27 @@
+.octicon {
+  display: inline-block;
+  vertical-align: text-bottom;
+  // vertical-align: text-top;
+  fill: currentColor;
+}
+
+.social {
+  padding-top: 0;
+  padding-bottom: 0;
+  svg {
+    vertical-align: text-bottom;
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+  }
+  @include hover-focus {
+    transform: scale(1.25);
+  }
+}
+
+.gray-500 {
+  color: $gray-500;
+}
+.gray-400 {
+  color: $gray-400;
+}
