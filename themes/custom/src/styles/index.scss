@@ -199,5 +199,11 @@ body {
 }
 
 .footer {
-  color: $text-muted;
+  color: $footer-color;
+  a {
+    color: $footer-link-color;
+    @include hover {
+      color: $footer-link-hover;
+    }
+  }
 }

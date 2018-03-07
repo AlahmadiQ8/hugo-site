@@ -13,3 +13,8 @@ params:
     email: mailto:m91.alahmadi@gmail.com?Subject=[from my site]
     codepen: https://codepen.io/mhd1991
     twitter: https://twitter.com/AlahmadiKU
+  footer: 
+    - <strong>© 2018 Mohammad Alahmadi. All Rights Reserved.</strong>
+    - > 
+      Made with ❤ & ☕ with <a href="https://gohugo.io" target="_blank">Hugo</a>
+    - Site source code is hosted at <a href="#" target="_blank">Github</a>
