@@ -3,6 +3,8 @@ languageCode: en-us
 title: Mohammad's Personal Website
 
 theme: custom
+enableGitInfo: true
+sectionPagesMenu: main
 
 params: 
   author: Mohammad Mohammad (Alahmadi)

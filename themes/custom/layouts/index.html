@@ -1,9 +1,16 @@
 {{ define "main" -}}
 {{ partial "banner.html" . }}
+<h1>HOME</h1>
+<h1>{{ with .Site.GetPage "section" "blog" }}sdfsdfs{{ end }}</h1>
 <p>{{ printf "%#v" .IsHome }}</p>
 <p>{{ printf "%#v" .Hugo.Generator }}</p>
 <p>{{ printf "%#v" .Site.Params.author }}</p>
 <p>{{ printf "%#v" .Site.Params.description }}</p>
 <p>{{ printf "%#v" .Site.Menus }}</p>
 <p>{{ printf "%#v" $.Site.Params.social.linkedin }}</p>
+<p>{{ printf "%#v" .Site.Menus }}</p>
+{{ range where .Site.Pages "Type" "post" -}}
+<p>{{ printf "%#v" .Type }}</p>
+{{- end }}
+<h1>{{ with .Site.GetPage "section" "blog" }}{{ .Title }}{{ end }}</h1>
 {{- end }}

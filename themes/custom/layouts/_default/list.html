@@ -1,2 +1,11 @@
-{{ printf "%#v" $.Site }}
-<p>{{ printf "%#v" . }}</p>
+{{ define "main" -}}
+{{- $current := printf "%#v" .Resources -}}
+<p>{{ printf $current }}</p>
+<ul class="posts">
+  {{ range .Data.Pages -}}
+  <li>
+    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}

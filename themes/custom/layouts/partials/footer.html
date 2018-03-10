@@ -1,23 +1,23 @@
 <footer class="footer container-fluid bg-theme-dark py-3 py-md-4 py-lg-5">
   <div class="row justify-content-center mb-3">
-    <div class="navbar-theme navbar-brand mx-0"><a class="navbar-brand px-3 mx-0" href="{{ relURL "" }}">M</a></div>
+    <div class="navbar-theme navbar-brand mx-0"><a class="navbar-brand px-3 mx-0" href="{{ .Site.BaseURL }}">M</a></div>
   </div>
   <div class="row justify-content-center">
     <div class="col-8 col-sm-6 col-md-4 col-lg-3 py-3 navbar-theme bg-theme-lightt rounded">
-      {{ with .Site.Params.social }}
+      {{ with .Site.Params.social -}}
       <ul class="navbar-nav flex-row justify-content-center">
         {{ partial "social.html" . }}
       </ul> 
-      {{ end }}
+      {{- end }}
     </div>
   </div>
   <div class="row justify-content-center mt-3">
-    {{ with .Site.Params.footer }}
+    {{ with .Site.Params.footer -}}
     <div class="text-center">
-      {{ range . }}
+      {{ range . -}}
       <p class="my-0">{{ . | safeHTML }}</p>
-      {{ end }}
+      {{- end }}
     </div>
-    {{ end }}
+    {{- end }}
   </div>
 </footer>
