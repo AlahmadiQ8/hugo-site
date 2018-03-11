@@ -106,7 +106,6 @@ body {
     border-radius: 50%;
     border:2px solid theme-color("accent-primary");
     padding:4px; 
-    // background: map-get($colors, brand);
   }
 }
 
@@ -156,6 +155,7 @@ body {
       text-decoration: none;
       .indexsection-entry-title {
         text-decoration: underline;
+        color: $link-hover-color;
       }
     }
     &:first-of-type {
@@ -201,7 +201,7 @@ body {
 
 .footer {
   color: $footer-color;
-  a {
+  a:not(.navbar-brand) {
     color: $footer-link-color;
     @include hover {
       color: $footer-link-hover;
