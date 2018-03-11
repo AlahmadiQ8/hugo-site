@@ -226,4 +226,17 @@ body {
       margin-bottom: 0;
     }
   }
+  img {
+    padding: $thumbnail-padding;
+    background-color: $thumbnail-bg;
+    border: $thumbnail-border-width solid $thumbnail-border-color;
+    @include border-radius($thumbnail-border-radius);
+    @include box-shadow($thumbnail-box-shadow);
+    @include img-fluid;
+  }
+  figcaption {
+    font-size: $small-font-size;
+    text-align: center;
+    color: $text-muted;
+  }
 }

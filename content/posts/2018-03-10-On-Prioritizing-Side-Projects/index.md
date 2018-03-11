@@ -5,6 +5,8 @@ description: In this post, I’ll focus on what I’ve learned about how to prio
 draft: false
 ---
 
+{{% figure src="confused.png" atl="Confused Kawaii" caption="Wanted an exuse to put my Apple pencil in use 😁" %}}
+
 There are many things I want to do in my free time. These can be anything from programming projects, exploring new hobbies, or simply reading a book. However, whenever I attempt to get my hands dirty on a project, I often end up not completing it.  Like many people, I struggle with wasting too much time on TV, social media, or just hanging out. 
 
 As a front end web developer, I’ve been wanting to build a portfolio of my work for my personal website. I thought I had enough existing projects to display, but it turns out most of them are half-baked abandoned projects. I sometime get disappointed in myself, but this forces me to examine my habits and try to understand why I never complete side projects. I decided to take a closer look at my task management outside of work, and I have been experimenting with different strategies to balance having fun and working on side projects. 
