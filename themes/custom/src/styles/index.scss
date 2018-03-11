@@ -208,3 +208,22 @@ body {
     }
   }
 }
+
+.content {
+  h1 {
+    font-size: $h3-font-size;
+    padding-bottom: $content-h1-padding-bottom;
+    border-bottom: $content-h1-border-bottom;
+    margin-bottom: $content-h1-margin-bottom;
+  }
+  p {
+    margin-bottom: $content-p-margin-bottom;
+    line-height: 1.7;
+  }
+  li {
+    margin-bottom: $content-li-margin-bottom;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
