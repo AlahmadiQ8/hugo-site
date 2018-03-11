@@ -1,6 +1,6 @@
-const webpack = require('webpack')
-const path = require('path')
-const autoprefixer = require('autoprefixer')
+const webpack = require('webpack');
+const path = require('path');
+const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const {
@@ -23,19 +23,18 @@ const {
   env,
   setOutput,
   sourceMaps,
-  
+
   // helpers
   // when,
   group,
-} = require('webpack-blocks')
-
+} = require('webpack-blocks');
 
 // TODO: when() will be supported in webpack-blocks next release
-function when (condition, configSetters) {
+function when(condition, configSetters) {
   if (condition) {
-    return group(configSetters)
+    return group(configSetters);
   } else {
-    return () => config => config
+    return () => config => config;
   }
 }
 
@@ -49,21 +48,18 @@ module.exports = createConfig([
   match('*.scss', { exclude: path.resolve('node_modules') }, [
     sass(),
     postcss({
-      plugins: [
-        autoprefixer({ browsers: ['last 2 versions'] })
-      ],
+      plugins: [autoprefixer({ browsers: ['last 2 versions'] })],
     }),
     when(
-      process.env.npm_lifecycle_event.match(/^dev/) || process.env.NODE_ENV === 'production',
+      process.env.npm_lifecycle_event.match(/^dev/) ||
+        process.env.NODE_ENV === 'production',
       [extractText('css/main.css')]
     ),
     // env('production', [extractText()])
   ]),
-  match(['*.gif', '*.jpg', '*.jpeg', '*.png', '*.webp', '*.svg'], [
-    file()
-  ]),
+  match(['*.gif', '*.jpg', '*.jpeg', '*.png', '*.webp', '*.svg'], [file()]),
   setEnv({
-    NODE_ENV: process.env.NODE_ENV
+    NODE_ENV: process.env.NODE_ENV,
   }),
   addPlugins([
     new webpack.ProvidePlugin({
@@ -72,16 +68,21 @@ module.exports = createConfig([
       Tether: 'tether',
       Popper: 'popper.js',
     }),
-    new CopyWebpackPlugin([{
-      from: './src/assets',
-      to: path.resolve(__dirname, 'static/assets')
-    }])
+    new CopyWebpackPlugin([
+      {
+        from: './src/assets',
+        to: path.resolve(__dirname, 'static/assets'),
+      },
+    ]),
   ]),
-  when(process.env.npm_lifecycle_event === 'start', [ devServer(), sourceMaps() ]),
+  when(
+    process.env.npm_lifecycle_event.match(/^dev/) ||
+      process.env.NODE_ENV === 'production',
+    [sourceMaps()]
+  ),
+  when(process.env.npm_lifecycle_event === 'start', [devServer()]),
   env('production', [
     uglify(),
-    addPlugins([
-      new webpack.LoaderOptionsPlugin({ minimize: true })
-    ])
-  ])
-])
+    addPlugins([new webpack.LoaderOptionsPlugin({ minimize: true })]),
+  ]),
+]);
