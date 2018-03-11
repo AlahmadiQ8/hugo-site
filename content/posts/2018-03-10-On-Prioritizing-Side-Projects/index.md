@@ -5,7 +5,7 @@ description: In this post, I’ll focus on what I’ve learned about how to prio
 draft: false
 ---
 
-{{% figure src="confused.png" atl="Confused Kawaii" caption="Wanted an exuse to put my Apple pencil in use 😁" %}}
+{{% figure src="confused.png" atl="Confused Kawaii" caption="I just wanted an exuse to put my Apple pencil in use 😁" %}}
 
 There are many things I want to do in my free time. These can be anything from programming projects, exploring new hobbies, or simply reading a book. However, whenever I attempt to get my hands dirty on a project, I often end up not completing it.  Like many people, I struggle with wasting too much time on TV, social media, or just hanging out. 
 
@@ -33,3 +33,6 @@ Using the questions above, here are some things I picked to work on after work:
 - **Create a Connect-4 Game**. At my current job, we use Redux for application state management. Redux can have a steep learning curve, so I picked a random game to build. You can check out the final project at [this link](https://alahmadiq8.github.io/connect-4/). 
 - **Build a new feature for Wunderlist**. As an example of something that solves a specific problem, I built a simple API consumer for the Wunderlist to-do app that adds todo tasks in bulk from a line separated list of tasks. This was a missing feature I needed. You can check the end result at [this link](https://wunderlist-parser.herokuapp.com/). I had so much joy working on this since it helped me solve a problem that I was having with the app.
 
+It was easy to stay focused and dedicate time to these projects after work because they either contribute to my personal and professional growth, they solve a specific problem, or I was passionate about them. 
+
+I’m still trying to figure out how to balance work, side projects, and having fun. It will always be  an ongoing process. For now I think I’m on the right path.
