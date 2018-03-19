@@ -4,7 +4,14 @@ title: Mohammad's Personal Website
 
 theme: custom
 enableGitInfo: true
-sectionPagesMenu: main
+
+# sectionPagesMenu: main
+menu:
+  main:
+    - name: "Writing"
+      url: /posts/
+      identifier: posts
+      weight: 0
 
 params: 
   author: Mohammad Mohammad (Alahmadi)
