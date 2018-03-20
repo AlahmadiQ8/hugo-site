@@ -1,4 +1,4 @@
-baseURL: https://alahmadiq8.github.io/
+baseURL: https://alahmadiq8.github.io/hugo-site
 languageCode: en-us
 title: Mohammad's Personal Website
 
@@ -26,4 +26,4 @@ params:
     - <strong>© 2018 Mohammad Alahmadi. All Rights Reserved.</strong>
     - > 
       Made with ❤ & ☕ with <a href="https://gohugo.io" target="_blank">Hugo</a>
-    - Site source code is hosted at <a href="#" target="_blank">Github</a>
+    - Site source code is hosted at <a href="https://github.com/AlahmadiQ8/hugo-site" target="_blank">Github</a>
