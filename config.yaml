@@ -5,6 +5,8 @@ title: Mohammad's Personal Website
 theme: custom
 enableGitInfo: true
 
+googleAnalytics: UA-78685008-2
+
 permalinks:
   posts: /:section/:slug
 
