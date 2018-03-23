@@ -1,9 +1,12 @@
-baseURL: https://alahmadiq8.github.io/hugo-site
+baseURL: https://alahmadiq8.github.io
 languageCode: en-us
 title: Mohammad's Personal Website
 
 theme: custom
 enableGitInfo: true
+
+permalinks:
+  posts: /:section/:slug
 
 # sectionPagesMenu: main
 menu:

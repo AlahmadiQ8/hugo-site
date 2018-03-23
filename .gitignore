@@ -11,6 +11,5 @@ npm-debug.log
 sessions
 .DS_Store
 
-public
 *.css.map
 *.js.map
