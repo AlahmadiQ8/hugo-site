@@ -27,6 +27,7 @@ params:
     email: mailto:m91.alahmadi@gmail.com?Subject=[from my site]
     codepen: https://codepen.io/mhd1991
     twitter: https://twitter.com/AlahmadiKU
+    devto: https://dev.to/alahmadiq8
   footer: 
     - <strong>© 2018 Mohammad Alahmadi. All Rights Reserved.</strong>
     - > 
