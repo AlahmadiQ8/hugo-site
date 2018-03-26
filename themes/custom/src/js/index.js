@@ -1,9 +1,14 @@
 require('bootstrap');
 import '../styles/index.scss';
 
+import ferrisWheelAnimation from './ferrisWheelAnimation';
+
 $(document).ready(function() {
   const headers = $('.content').find('h1, h2, h3');
   headers.each(addAnchorLink);
+  if ($('#ferrisWheelAnimation').length) {
+    ferrisWheelAnimation.play();
+  }
 });
 
 function addAnchorLink() {
