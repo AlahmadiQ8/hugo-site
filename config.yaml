@@ -9,6 +9,7 @@ googleAnalytics: UA-78685008-2
 
 permalinks:
   posts: /:section/:slug
+  work: /:section/:slug
 
 # sectionPagesMenu: main
 menu:

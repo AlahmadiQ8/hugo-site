@@ -3,8 +3,11 @@
 {{ with .Site.GetPage "section" "posts" }}
 {{ partial "homeSectionList.html" . }}
 {{ end }}
+{{ with .Site.GetPage "section" "work" }}
+{{ partial "homeSectionList.html" . }}
+{{ end }}
 
-<!-- {{ partial "debugprint.html" .Site.Menus }} -->
+
 <!-- {{ range where (where .Site.Pages "Type" "page") "Kind" "!=" "home" }}
 <p>{{ printf "%#v" .Title }} - {{ .Kind }} - {{ .Type }}</p>
 {{ end }} -->
