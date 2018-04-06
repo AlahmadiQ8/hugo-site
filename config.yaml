@@ -18,6 +18,10 @@ menu:
       url: /posts/
       identifier: posts
       weight: 0
+    - name: "Work"
+      url: /work/
+      identifier: work
+      weight: 0
 
 params: 
   author: Mohammad Mohammad (Alahmadi)
