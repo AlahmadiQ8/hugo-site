@@ -5,6 +5,7 @@
   <div class="col-md-8 col-lg-6 py-4 py-lg-5 pl-4 pl-lg-6 bg-white">
     {{ if eq .Type "work" }}
     {{ range .Pages -}}
+      {{ .Scratch.Set "h1Title" true }}
       {{ partial "listItemWork.html" . }}
     {{- end }}
     {{ else }}
