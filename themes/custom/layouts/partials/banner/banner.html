@@ -1,4 +1,4 @@
-<div class="container-fluid bg-theme-dark">
+<div class="container-fluid{{ if not .IsHome  }} bg-theme-dark{{ end }}">
   <div class="container text-white py-5 py-md-7{{ if .IsHome }} py-lg-10{{ end }}">
     <div class="row justify-content-md-center align-items-center">
       {{ if .IsHome }}

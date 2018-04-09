@@ -39,7 +39,10 @@
     {{ $.Scratch.Set "bg" " bg-theme-lighter" }}
     {{ end }}
     <div class="main{{ $.Scratch.Get "bg" }}">
-    {{ partial "header.html" . }}
+    <div class="banner">
+      {{ partial "header.html" . }}
+      {{ block "banner" . -}}{{- end }}
+    </div>
     {{ block "main" . -}}{{- end }}
     </div>
     {{ partial "footer.html" . }}
