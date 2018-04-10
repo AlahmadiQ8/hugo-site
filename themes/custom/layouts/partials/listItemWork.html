@@ -1,13 +1,15 @@
 {{ $thumbnail := index (.Resources.Match "thumbnail") 0 }}
 <div class="indexsection-entry media mt-4 mx-auto align-items-stretch align-items-md-center flex-column flex-md-row">
   {{ with $thumbnail }}
-  <img class="img-thumbnail mr-md-6 align-self-center" src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="max-width: 250px;"/>
+  <img class="img-thumbnail mr-md-4 align-self-center" src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="max-width: 200px;"/>
   {{ end }}
   <div class="media-body mt-3 mt-md-0">
     <div class="list-group list-group-flush">
       {{ if eq ($.Scratch.Get "h1Title") true }}
       <div class="list-group-item">
-          <a href="{{ .URL }}"><h2 class="indexsection-entry-title mt-2 mt-md-0 text-center text-md-left">{{ .Title }}</h2></a>
+          <a href="{{ if isset .Params "external" }}{{ .Params.external }}{{ else }}{{ .URL }}{{ end }}"{{ with .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+            <h2 class="indexsection-entry-title mt-2 mt-md-0 text-center text-md-left">{{ .Title }}</h2>
+          </a>
       </div>
       {{ end }}
       {{ with .Params.details -}}

@@ -10,5 +10,6 @@ details:
   services: Squarespace setup, Domain Setup, CSS customization
   type: Freelance
   projecturl: https://www.officialparkermatthews.com
+external: https://www.officialparkermatthews.com
 ---
 
