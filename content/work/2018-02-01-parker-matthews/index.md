@@ -8,7 +8,6 @@ resources:
 details:
   project: Built a Squarespace website for Parker Matthews, an LA Based singer/songwriter.
   services: Squarespace setup, Domain Setup, CSS customization
-  type: Freelance
   projecturl: https://www.officialparkermatthews.com
 external: https://www.officialparkermatthews.com
 ---
