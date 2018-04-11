@@ -12,7 +12,7 @@
         <div class="header ml-lg-2">
           {{ if .IsHome }}
           {{ partial "banner/home.html" . }}
-          {{ else if eq .Type "work" }}
+          {{ else if or (eq .Type "work") (eq .Type "projects") }}
           <h1 class="header-h1 text-center  mt-2 mt-lg-0 pb-3">{{ .Title }}</h1>
           {{ else }}
           {{ partial "banner/post.html" . }}

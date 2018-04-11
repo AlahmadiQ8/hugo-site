@@ -10,6 +10,3 @@ details:
   projecturl: https://github.com/AlahmadiQ8/connect-4
 external: https://github.com/AlahmadiQ8/connect-4
 ---
-
-
-omg omg omg 
