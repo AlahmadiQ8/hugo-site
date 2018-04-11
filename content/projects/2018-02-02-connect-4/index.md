@@ -1,5 +1,7 @@
 ---
-title: "Connect 4"
+# Do not name it connect-4 since there is already a github project with the same
+# name
+title: "Connect 4 Game"
 draft: false
 resources:
  - src: connect-4.png
