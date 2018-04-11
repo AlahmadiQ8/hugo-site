@@ -14,12 +14,7 @@
       {{ end }}
       {{ with .Params.details -}}
       {{ with .project }}
-      <div class="list-group-item">
-        <div class="row flex-column flex-lg-row">
-          <div class="col-2 mb-2 mb-sm-0"><strong>Project</strong></div>
-          <div class="col-10">{{ . | markdownify }}</div>
-        </div>
-      </div>
+      <div class="list-group-item">{{ . | markdownify }}</div>
       {{ end }}
       {{ with .services }}
       <div class="list-group-item">
