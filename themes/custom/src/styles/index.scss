@@ -144,23 +144,26 @@ body {
     }
   }
   .indexsection-entry {
-    border-bottom: 1px solid $border-color;
+    @include media-breakpoint-up(lg) {
+      padding: 30px;
+      margin: -30px;
+    }
+    padding: 10px;
+    border: 3px dashed transparent;
+    // border-bottom: 1px solid $border-color;
     margin-top: $spacer * 1.5;
     padding-bottom: $spacer * 1.5;
     &:hover {
       text-decoration: none;
+      border: 3px dashed theme-color('accent-secondary');
+      border-bottom: 3px dashed theme-color('accent-secondary') !important;
       .indexsection-entry-title {
         cursor: pointer;
-        text-decoration: underline;
         color: $link-hover-color;
       }
     }
     &:first-of-type {
       margin-top: 0;
-    }
-    &:last-of-type {
-      border-bottom: none;
-      padding-bottom: 0;
     }
   }
   .indexsection-entry-title {
