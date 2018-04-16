@@ -18,8 +18,8 @@ echo "Generating site"
 hugo
 
 echo "Tiying html"
-find $BUILD_DIR -type f -name "*.html" -exec tidy -m -i -w 0 {} \;
-
+find $BUILD_DIR -type f -name "*.html" -exec tidy -config tidy.config -m -i -w 0 {} \;
+    q
 echo "Updating gh-pages branch"
 cd $BUILD_DIR && git add . && git commit -m "Publishing to alahmadiq8.github.io"
 
