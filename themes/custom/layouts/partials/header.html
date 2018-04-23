@@ -5,7 +5,7 @@
   {{- $.Scratch.Set "isPage" false -}}
   {{- end -}}
 {{- end -}}
-<div id="header" class="container-fluid bg-theme-dark">
+<div id="header" class="container-fluid{{ if not .IsHome  }} bg-theme-dark{{ end }}">
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-theme {{ if $.Scratch.Get "isPage" }}navbar-border{{ end }}">
       <a class="navbar-brand px-3" href="{{ .Site.BaseURL }}">M</a>

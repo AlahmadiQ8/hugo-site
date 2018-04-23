@@ -1,0 +1,8 @@
+.list-group-flush {
+  .list-group-item {
+    border-style: dashed;
+    &:first-child {
+      border-top: 0;
+    }
+  }
+}

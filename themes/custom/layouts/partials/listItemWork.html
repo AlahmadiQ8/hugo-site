@@ -1,0 +1,38 @@
+{{ $thumbnail := index (.Resources.Match "thumbnail") 0 }}
+<div class="indexsection-entry media mt-4 mx-auto align-items-stretch align-items-md-start flex-column flex-md-row">
+  {{ with $thumbnail }}
+  <img class="img-thumbnail mr-md-4 align-self-center" src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="max-width: 200px;"/>
+  {{ end }}
+  <div class="media-body mt-3 mt-md-0">
+    <div class="list-group list-group-flush">
+      {{ if eq ($.Scratch.Get "h1Title") true }}
+      <div class="list-group-item">
+          <a href="{{ if isset .Params "external" }}{{ .Params.external }}{{ else }}{{ .URL }}{{ end }}"{{ with .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+            <h2 class="indexsection-entry-title mt-2 mt-md-0 text-center text-md-left">{{ .Title }}</h2>
+          </a>
+      </div>
+      {{ end }}
+      {{ with .Params.details -}}
+      {{ with .project }}
+      <div class="list-group-item">{{ . | markdownify }}</div>
+      {{ end }}
+      {{ with .services }}
+      <div class="list-group-item">
+        <div class="row flex-column flex-lg-row">
+          <div class="col-2 mb-2 mb-sm-0"><strong>Services</strong></div>
+          <div class="col-10">{{ . }}</div>
+        </div>
+      </div>
+      {{ end }}
+      {{ with .projecturl }}
+      <div class="list-group-item">
+        <div class="row flex-column flex-lg-row">
+          <div class="col-2 mb-2 mb-sm-0"><strong>URL</strong></div>
+          <div class="col-10"><a class="no-color-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a></div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{- end }}
+  </div>
+</div>

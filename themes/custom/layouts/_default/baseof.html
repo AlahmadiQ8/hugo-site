@@ -35,8 +35,14 @@
     <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
   </head>
   <body class="">
-    <div class="main{{ if eq .Kind "section" }} bg-theme-lighter{{ end }}">
-    {{ partial "header.html" . }}
+    {{ if eq .Kind "section" }}
+    {{ $.Scratch.Set "bg" " bg-theme-lighter" }}
+    {{ end }}
+    <div class="main{{ $.Scratch.Get "bg" }}">
+    <div class="banner">
+      {{ partial "header.html" . }}
+      {{ block "banner" . -}}{{- end }}
+    </div>
     {{ block "main" . -}}{{- end }}
     </div>
     {{ partial "footer.html" . }}

@@ -9,6 +9,8 @@ googleAnalytics: UA-78685008-2
 
 permalinks:
   posts: /:section/:slug
+  projects: /:slug
+  work: /:section/:slug
 
 # sectionPagesMenu: main
 menu:
@@ -17,6 +19,14 @@ menu:
       url: /posts/
       identifier: posts
       weight: 0
+    - name: "Projects"
+      url: /projects/
+      identifier: projects
+      weight: 2
+    - name: "Freelance"
+      url: /work/
+      identifier: work
+      weight: 1
 
 params: 
   author: Mohammad Mohammad (Alahmadi)

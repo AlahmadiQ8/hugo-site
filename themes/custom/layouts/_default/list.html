@@ -1,10 +1,17 @@
 {{ define "main" -}}
 
-<div class="row indexsection justify-content-center mt-sm-2 mt-md-3 mt-lg-4 mt-xl-6">
+<div class="row indexsection justify-content-center mt-sm-2 mt-md-3 mt-lg-4 mt-xl-6 mb-sm-2 mb-md-3 mb-lg-4 mb-xl-6">
   {{ if gt (len .Pages) 0 -}}
   <div class="col-md-8 col-lg-6 py-4 py-lg-5 pl-4 pl-lg-6 bg-white">
+    {{ if or (eq .Type "work") (eq .Type "projects") }}
+    {{ range .Pages -}}
+      {{ .Scratch.Set "h1Title" true }}
+      {{ partial "listItemWork.html" . }}
+    {{- end }}
+    {{ else }}
     {{ range .Pages -}}
       {{ partial "listItem.html" . }}
+    {{- end }}
     {{- end }}
   </div>
   {{- end }}

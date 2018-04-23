@@ -1,0 +1,14 @@
+<h1 class="header-h1  mt-2 mt-lg-0 pb-3">
+  {{ if isset .Params "author" }}
+  {{ .Params.author }}
+  {{ else }}
+  Author Name
+  {{ end }}
+</h1>
+<p class="header-p font-weight-light mt-4 mb-0">
+  {{ if isset .Params "aboutme" }}
+  {{ .Params.aboutme }}
+  {{ else }}
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+  {{ end }}
+</p>
