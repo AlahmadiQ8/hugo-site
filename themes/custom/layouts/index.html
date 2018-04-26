@@ -65,6 +65,20 @@
 </div>  
 {{ end }}
 
+{{ with .Site.GetPage "page" "about-me.md" }}
+<div class="bg-theme-lightt">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="inverted col-12 col-lg-8 py-7 ">
+        <h1 class="header-h1 text-white text-center mt-2 mt-lg-0 pb-3 mb-6" id="about-me">{{ .Title }}</h1>
+        <div class="content inverted">
+        {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
 
 <!-- {{ range where (where .Site.Pages "Type" "page") "Kind" "!=" "home" }}
 <p>{{ printf "%#v" .Title }} - {{ .Kind }} - {{ .Type }}</p>

@@ -106,29 +106,28 @@ body {
   }
 }
 
-.header {
-  .header-p {
-    font-size: $font-size-base;
-    @include media-breakpoint-up(sm) {
-      font-size: $font-size-lg;
-    }
-    @include media-breakpoint-up(lg) {
-      font-size: $h3-font-size;
-    }
+
+.header-p {
+  font-size: $font-size-base;
+  @include media-breakpoint-up(sm) {
+    font-size: $font-size-lg;
   }
-  .header-h1 {
-    text-align: center;
-    border-bottom: 2px solid theme-color('accent-primary');
-    font-size: $h2-font-size;
-    @include media-breakpoint-up(sm) {
-      font-size: $h1-font-size;
-    }
-    @include media-breakpoint-up(lg) {
-      text-align: left;
-    }
-    @include media-breakpoint-up(xl) {
-      font-size: $display4-size;
-    }
+  @include media-breakpoint-up(lg) {
+    font-size: $h3-font-size;
+  }
+}
+.header-h1 {
+  text-align: center;
+  border-bottom: 2px solid theme-color('accent-primary') !important;
+  font-size: $h2-font-size;
+  @include media-breakpoint-up(sm) {
+    font-size: $h1-font-size;
+  }
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: $display4-size;
   }
 }
 
