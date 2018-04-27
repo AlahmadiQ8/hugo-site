@@ -13,7 +13,7 @@ Before joining Procore, I worked at ElephantDrive, a cloud backup company, as a 
 
 # Who I Am
 
-I’m from Kuwait 🇰🇼. I came to the States for college and ended up working here. I visit home at least twice a year. I wish I have the privilege to visit more often. Here is a pic of me with my twin brother and cousin in downtown Kuwait.
+I’m from Kuwait 🇰🇼. I came to the States for college and ended up working here. I visit home at least twice a year. I wish I had the privilege to visit more often. Here is a pic of me with my twin brother and cousin in downtown Kuwait.
 
 {{< instagram BdVbFwvH3sD >}}
 
