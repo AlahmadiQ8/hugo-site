@@ -18,6 +18,16 @@
       margin-bottom: 0;
     }
   }
+  .twitter-tweet {    
+    padding: $thumbnail-padding;
+    border: $thumbnail-border-width solid $thumbnail-border-color;
+    @include border-radius($thumbnail-border-radius);
+    @include box-shadow($thumbnail-box-shadow);
+    @include img-fluid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem !important;
+  }
   img {
     padding: $thumbnail-padding;
     background-color: $thumbnail-bg;
