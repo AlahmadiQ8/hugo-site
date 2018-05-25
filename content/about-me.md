@@ -9,7 +9,7 @@ description: Hi, I’m Mohammad! I’m a front-end software engineer from Kuwait
 
 I love creating great web experiences for customers. I am mostly focused on front-end technologies, specifically react and redux. I work closely with UX teams to build front-end applications. I occasionally dabble with backend in nodejs and rails. I also enjoy exploring web animations with GSAP and CSS. I have also previously done a lot of test automation in Python for hardware network devices. 
 
-Before joining Procore, I worked at ElephantDrive, a cloud backup company, as a developer support engineer. That’s where I found my passion for the work I do now focused on developing applications.  I started my career interning at Southern California Edison as a Communications Engineer. Later I worked as a test engineer at Canoga Perkins. I received my Bachelor’s at Oregon State University and my Master’s from UCLA, both in electrical engineering.
+Before joining Procore, I worked at ElephantDrive, a cloud backup company, as a developer support engineer. That’s where I found my passion for the work I do now focusing on application development.  I started my career interning at Southern California Edison as a Communications Engineer. Later I worked as a test engineer at Canoga Perkins. I received my Bachelor’s at Oregon State University and my Master’s from UCLA, both in electrical engineering.
 
 # Who I Am
 
