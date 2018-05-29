@@ -33,6 +33,13 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+
+    <meta property="og:title" content="{{ .Site.Title }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:image" content="assets/thumbnail.jpg">
+    <meta property="og:url" content="https://alahmadiq8.github.io/">
+    <meta name="twitter:card" content="https://alahmadiq8.github.io/">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
   </head>
   <body class="">
     {{ if eq .Kind "section" }}
